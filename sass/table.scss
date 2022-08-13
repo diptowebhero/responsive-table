@@ -1,0 +1,136 @@
+.review_page_containers {
+  background: white;
+  padding: 25px;
+  .review_page_header {
+    border-bottom: 1px solid #d7d4d4;
+    .form-control {
+      background-color: #f4f5f9;
+      border: 2px solid #f4f5f9;
+      font-size: 13px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      padding-left: 20px px;
+      color: #4f5d77;
+      width: 100%;
+      border-radius: 4px;
+      height: 45px;
+    }
+    .form-select {
+      background-color: #f4f5f9;
+      border: 2px solid #f4f5f9;
+      font-size: 13px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      padding-left: 20px;
+      color: #4f5d77;
+      width: 100%;
+      border-radius: 4px;
+      height: 45px;
+    }
+  }
+  .review_cart_body_container {
+    overflow-x: auto;
+    .table_container {
+      .table {
+        thead {
+          background: #f4f5f9;
+          th {
+            color: #56606e;
+            font-weight: 600;
+            text-align: center;
+          }
+        }
+      }
+      tbody {
+        ul {
+          li {
+            list-style: none;
+          }
+        }
+        tr {
+          td {
+            text-align: center;
+            vertical-align: middle;
+            font-weight: 500;
+            color: gray;
+          }
+          .product_img {
+            width: 80px;
+            height: 80px;
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+      .action_btn {
+        button {
+          border: none;
+          padding: 5px 15px;
+          border-radius: 5px;
+        }
+        .edit_btn {
+          background: #046963;
+          color: white;
+          transition: 0.3s;
+          &:hover {
+            background-color: #07726c;
+          }
+        }
+        .delete_btn {
+          background: #d11a2a;
+          color: white;
+          transition: 0.3s;
+          &:hover {
+            background-color: #cb1827;
+          }
+        }
+      }
+      .ratings {
+        .rating {
+          color: orange;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 780px) {
+  .delete_btn {
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 575px) {
+  .review_page_header_right {
+    margin-top: 10px;
+  }
+  .review_page_containers
+    .review_cart_body_container
+    .table_container
+    tbody
+    tr
+    td {
+    font-size: 9px;
+  }
+  .delete_btn {
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 376px) {
+  .review_page_header_right {
+    margin-top: 10px;
+  }
+  .review_page_containers
+    .review_cart_body_container
+    .table_container
+    tbody
+    tr
+    td {
+    font-size: 9px;
+  }
+  .delete_btn {
+    margin-top: 5px;
+  }
+}
